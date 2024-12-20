@@ -2,7 +2,7 @@ I designed this prediction model as part of a project which examined the impleme
   
 To preserve both the anonymity and privacy of the students we sampled during our study, the file included in this repository contains data that was purely generated from ChatGPT.
 
-This prediction model takes in
+This model takes in
   
 Features like “Major” were ultimately not implemented when designing the model due to the possibility that it could reinforce a bias or stereotype. The 3 features that the model took into account were “Whether the individual felt they were Introverted or Extroverted,” “Whether the individual lived On or Off Campus,” and “How many social events the individual attended per week.” These were the features that both required the least amount of assumptions when assessing their effects and were the most “algorithmic” of the 5. That being said, the 2 features that the model didn’t consider were used to subjectively assess its accuracy.
   
