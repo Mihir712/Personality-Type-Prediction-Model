@@ -1,4 +1,6 @@
-I designed this prediction model as part of a project which examined the implementation of a machine learning algorithm to predict personality traits (introversion vs. extroversion) among UNC Chapel Hill students. The primary focus of the study was to ensure and investigate ethics and fairness in different data collection methods for a machine learning model. [Collaborators in the original study: Akshara Kolipaka, Mikayla Tuttle, Zimu Guan]
+I designed this prediction model as part of a project which examined the implementation of a machine learning algorithm to predict personality traits (introversion vs. extroversion) among UNC Chapel Hill students. The primary focus of the study was to ensure and investigate ethics and fairness in different data collection methods for a machine learning model. 
+
+    [Collaborators in the original study: Akshara Kolipaka, Mikayla Tuttle, Zimu Guan]
   
 To preserve both the anonymity and privacy of the students we sampled during our study, the file included in this repository contains data that was purely generated from ChatGPT.
 
