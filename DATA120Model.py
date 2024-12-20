@@ -4,7 +4,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import accuracy_score, classification_report
 
-df = pd.read_excel('/Users/Mihir/Documents/DATA 120 Final Project (UNC Body) (Responses).xlsx')
+df = pd.read_excel('/Users/Mihir/Documents/GeneratedData.xlsx')
 
 features = ['About how many social events do you attend per week?', 'Do you live On or Off Campus?']
 target = 'Do you consider yourself an introvert or extrovert?'
