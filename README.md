@@ -20,4 +20,5 @@ Sample Output:
 
 <img width="342" alt="Screen Shot 2024-12-20 at 2 59 14 PM" src="https://github.com/user-attachments/assets/aa8e1d81-0108-47a3-800a-7850159131f1" />
 
+
 Feel free to play around with this model and insert your own spreadsheet of the same format to view its predictions!
