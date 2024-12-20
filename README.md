@@ -4,11 +4,16 @@ To preserve both the anonymity and privacy of the students we sampled during our
 
 This model takes in a dataset containing 50 responses to 5 questions (features) and returns a single prediction (Introverted/Extroverted) for each response.
 Input features include an individual's:
-  • Perception of their personality
-  • College Major
-  • Number of Social Events Attended Per Week
-  • Preferred Study Location
-  • Housing Situation (On/Off Campus)
+
+    • Perception of their personality
+  
+    • College Major
+  
+    • Number of Social Events Attended Per Week
+  
+    • Preferred Study Location
+  
+    • Housing Situation (On/Off Campus)
 
 Once predictions have been made for each row of the dataset, the overall ratio of correct responses is calculated using a Confusion Matrix and displayed as the model's "Overall Accuracy."
 
