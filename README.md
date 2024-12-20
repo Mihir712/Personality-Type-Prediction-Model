@@ -2,15 +2,25 @@ I designed this prediction model as part of a project which examined the impleme
   
 To preserve both the anonymity and privacy of the students we sampled during our study, the file included in this repository contains data that was purely generated from ChatGPT.
 
-This model takes in
-  
+This model takes in a dataset containing 50 responses to 5 questions (features) and returns a single prediction (Introverted/Extroverted) for each response.
+Input features include an individual's:
+  • Perception of their personality
+  • College Major
+  • Number of Social Events Attended Per Week
+  • Preferred Study Location
+  • Housing Situation (On/Off Campus)
+
+Once predictions have been made for each row of the dataset, the overall ratio of correct responses is calculated using a Confusion Matrix and displayed as the model's "Overall Accuracy."
+
 Features like “Major” were ultimately not implemented when designing the model due to the possibility that it could reinforce a bias or stereotype. The 3 features that the model took into account were “Whether the individual felt they were Introverted or Extroverted,” “Whether the individual lived On or Off Campus,” and “How many social events the individual attended per week.” These were the features that both required the least amount of assumptions when assessing their effects and were the most “algorithmic” of the 5. That being said, the 2 features that the model didn’t consider were used to subjectively assess its accuracy.
+
+To numerically assess accuracy, the predictions based on the On/Off Campus and Social Events questions are compared with the Individual Feeling question. If both yield the same reponse, that prediction is considered a "success."
   
 The model makes use of the Random Forest algorithm because its structure involves processing multiple categories or “groups” to reach a final value. Due to the social nature of this scenario, the Random Forest algorithm introduces a flow chart - like thought structure, as the model goes through multiple questions (features in this case) one by one and translates the result into a single boolean score. A crucial step in the Random Forest algorithm is ensuring that the sample sizes of all datasets being considered are equal, stressing the importance of balanced sampling.
   
 The final results were heavily dependent on the On-Off Campus and Number of Social Events questions, but I did play around with the feature importance of each. Importing the pandas and sklearn libraries allowed me to find values for each of these features that would make the most sense for predictions, and these were the values that yielded the greatest overall accuracy for each dataset.
   
-The training process involved generating new data from ChatGPT like we did during the data collection phase and feeding this new data into the model. Our goal is to see how it performs and whether or not it reinforces any pre-existing biases. We validate our model/system by comparing the results to the inputted data and considering it from multiple angles (i.e. if a result seems plausible based on the raw data or not). Our visualizations of the collected data can also help us identify a general pattern and check if the prediction model results are consistent with these trends. We are also planning to ensure that metrics such as Equal Opportunity and Group Fairness are adhered to in the collection process. This is a case where results can’t necessarily be verified after the prediction (like in the case of criminals reoffending for example). Extroversion vs Introversion is a very subjective quality to measure, so the validation portion of our project is the most challenging aspect. 
+The training process involved generating new data from ChatGPT and feeding this new data into the model. The goal was to see how it performed and whether or not it reinforced any pre-existing biases. My team and I validated the model by comparing the results to the inputted data and considering it from multiple angles (i.e. if a result seems plausible based on the raw data or not).
 
 Feel free to play around with this model and insert your own spreadsheet of the same format to view its predictions!
 
